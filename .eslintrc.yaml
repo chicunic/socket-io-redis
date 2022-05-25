@@ -1,0 +1,20 @@
+env:
+  commonjs: true
+  es2021: true
+  node: true
+extends:
+  - airbnb-base
+parserOptions:
+  ecmaVersion: latest
+rules:
+  camelcase: 0
+  max-len: [2, { code: 160, ignoreComments: true, ignoreRegExpLiterals: true }]
+  mocha/no-hooks-for-single-case: 0
+  no-await-in-loop: 0
+  no-console: 0
+  no-continue: 2
+  no-param-reassign: [2, { props: true, ignorePropertyModificationsFor: [cond, conditions, conf, ctx, filter, option, params, projection, item] }]
+  no-restricted-syntax: 0
+  no-underscore-dangle: [2, { allow: [_data, __dirname, _id, _params, __v] }]
+  no-unused-vars: [2, { argsIgnorePattern: next, varsIgnorePattern: ^code$|^next$|^code$ }]
+  object-curly-newline: 0
