@@ -12,5 +12,7 @@ const emit = async (event, data) => {
 
 // emit('time', Date.now());
 setInterval(() => {
-  emit('time', Date.now());
+  const time = Date.now();
+  emit('time', time);
+  console.log(`emitted time: ${time}`);
 }, 5000);

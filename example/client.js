@@ -4,7 +4,7 @@ const socket = io('ws://localhost:3000', { transports: ['websocket'] });
 
 socket.on('connect', () => {
   console.log('socket.id', socket.id);
-});
-socket.on('time', (time) => {
-  console.log('time', time);
+  socket.on('time', (time) => {
+    console.log('time', time);
+  });
 });
