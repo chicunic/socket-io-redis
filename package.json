@@ -1,0 +1,40 @@
+{
+  "name": "socket-io-redis",
+  "version": "0.0.1",
+  "description": "socket.io implementation by redis",
+  "repository": "git@github.com:chicunic/socket-io-redis.git",
+  "author": "chicunic",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx watch app.ts",
+    "start": "tsx app.ts",
+    "build": "tsc",
+    "check": "tsc -b && eslint . && prettier --check .",
+    "fix": "eslint . --fix && prettier --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "@socket.io/redis-emitter": "^5.1.0",
+    "dotenv": "^17.4.2",
+    "redis": "^5.11.0",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.1"
+  },
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+}
